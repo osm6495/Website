@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    height: 100%;
+    background-image: linear-gradient(rgb(255, 179, 0, 100), rgb(255, 86, 8, 100));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    color: rgb(40, 40, 40);
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+li, a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    list-style: none;
+}
+
+.login {
+    background-color: rgb(40, 40, 40);
+}
+
+.logo-container, .nav-links {
+    white-space: nowrap;
+    display: flex;
+    color: rgb(40, 40, 40);
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo-container {
+    flex: 1;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36pt;
+}
+
+nav{
+    flex: 1;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav-links {
+    position: relative;
+    margin: 20px;
+    float: right;
+    font-size: 16pt;
+    justify-content: space-around;
+}
+
+.login-links {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(255, 179, 0, 100);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: small;
+}
+
+@media screen and (max-width:718px) {
+    header {
+        height: auto;
+        display: list-item;
+        list-style: none;
+    }
+    .nav-links {
+        display: list-item;
+        vertical-align: middle;
+    }
+    .box {
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 718px) {
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.box{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background: rgb(40, 40, 40);
+    width: 300px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+    border-radius: 15px;
+}
+.box h1{
+    color: rgb(255, 179, 0, 100);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(255, 179, 0, 100);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(255, 179, 0, 100);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    background: rgb(255, 179, 0, 100);
+    color: rgb(40, 40, 40)
+}
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 2px solid rgb(255, 179, 0, 100);
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(255, 179, 0, 100);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: rgb(255, 179, 0, 100);
+    color: rgb(40, 40, 40)
+}
