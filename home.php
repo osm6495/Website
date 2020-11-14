@@ -6,8 +6,8 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: login.html');
 	exit;
 }
-$DATABASE_HOST = '192.168.50.68';
-$DATABASE_USER = 'user';
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
 $DATABASE_PASS = 'Serverlab';
 $DATABASE_NAME = 'db';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
