@@ -7,12 +7,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>The Lab - Create Account</title>
+        <title>The Lab - Profile</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./createaccountstyle.css">
+        <link rel="stylesheet" href="./homestyle.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -26,19 +26,20 @@
                 <ul class="nav-links">
                     <li ><a class="nav-links" href="#">Guacamole</a></li>
                     <li ><a class="nav-links" href="#">Resume</a></li>
-                    <li ><a class="nav-links" href="./login.html">Log In</a></li>
+                    <li ><a class="nav-links" href="./logout.php">Log Out</a></li>
                 </ul>
             </nav>
         </header>
-        <form class="box" action="index.html" method="post">
-            <h1>Create Account</h1>
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirm" placeholder="Confirm Password" required>
-            <input type="submit" name="" value="Submit">
-            <li><a class="login-links" href="./login.html">I already have an account</a></li>
-          </form>
-        <script src="" async defer></script>
+        <div class="box-background">
+            <form class="box" action="index.html" method="post">
+                <h1>Welcome to The Lab</h1>
+                <div class="text">
+                    <p>User: <?=$_SESSION['username']?></p>
+                    <p>Email: <?=$_SESSION['email']?></p>
+                    <p>Password: [REDACTED]</p>
+                </div>
+                <li><a class="pass" href="./createaccount.html">Change Password</a></li>
+            </form>
+        </div>
     </body>
 </html>
