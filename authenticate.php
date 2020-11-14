@@ -1,7 +1,7 @@
 <?php
 session_start();
-$DATABASE_HOST = '192.168.50.86';
-$DATABASE_USER = 'user';
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
 $DATABASE_PASS = 'Serverlab';
 $DATABASE_NAME = 'db';
 
